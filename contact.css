@@ -1,0 +1,145 @@
+/*
+------------------------------------------------------------------------
+-------------------------- Contact Page CSS  ------------------------
+------------------------------------------------------------------------
+*/
+/*
+------------------------------------------------------------------------
+----------------------- Header Section  CSS  ------------------------
+------------------------------------------------------------------------
+*/
+#header-section{
+    max-height:45rem;
+}
+#header-section .banner {
+    margin-top: 15rem;
+}
+#header-section .banner h1{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+#header-section .banner h1::after {
+    position: initial;
+    content: "";
+    top: 100%;
+    display: block;
+    margin:2rem auto 0;
+    background: #ffffff;
+}
+/*
+------------------------------------------------------------------------
+----------------------- Contact Section  CSS  ------------------------
+------------------------------------------------------------------------
+*/
+#contact{
+    width: 100%;
+    position: relative;
+}
+.contact-wrapper{
+    max-width: 140rem;
+    width: 90%;
+    margin: auto;
+    background: #e2e2e2;
+}
+#contact .input-box{
+    max-width: 60rem;
+    width: 100%;
+    margin: auto;
+    padding: 10rem 1rem 12rem;
+}
+#contact .input-box input,
+#contact .input-box textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 4rem;
+    padding: .8rem;
+    color: #3a3a3a;
+}
+#contact::placeholder{
+    font-size: 2rem;
+    font-weight: 200;
+    color: #3a3a3a;
+}
+#contact .input-box textarea{
+    width: 100%;
+    height: 15rem;
+    resize: none;
+}
+#contact .send-message-btn{
+    border: none;
+    outline: none;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: #00497f;
+    padding: .9rem 10rem;
+    border-radius: 3rem;
+    display: block;
+    margin: auto;
+    text-transform: capitalize;
+
+}
+/*
+-----------------------------------------------------------------------
+-------------- Responsive CSS For Contact Page  ------------------
+-----------------------------------------------------------------------
+*/
+/*large device*/
+@media all and (max-width:992px){
+    /*Banner*/
+    #header-section .banner h1 {
+        font-size: 6.2rem;
+    }
+    
+}
+/*medium device*/
+@media all and (max-width:768px){
+    /*Header*/
+    #header-section .banner h1 {
+        font-size: 5rem;
+    }
+    /*Contact*/
+    .contact-wrapper {
+        width: 100%;
+    }
+    .download-pdf-btn {
+        padding: 0.6rem 3rem;
+    }
+}
+
+/*small device*/
+@media all and (max-width:576px){
+    /*Header*/
+    #header-section{
+        max-height:35rem;
+    }
+    #header-section .banner h1 {
+        font-size: 4.2rem;
+    }
+    #header-section .banner {
+        margin-top: 10rem;
+    }
+    #header-section .banner h1 {
+        font-size: 3.5rem;
+    }
+    #contact .send-message-btn{
+        font-size: 2rem;
+        padding: .8rem 8rem;
+    }
+    .download-pdf-btn {
+        font-size: 1.8rem;
+    }
+}
+/*Extra small device*/
+@media all and (max-width:400px){
+    /*banner*/
+    #header-section .banner {
+        margin-top: 5rem;
+    }
+    #contact .send-message-btn{
+        font-size: 1.8rem;
+        padding: .6rem 6rem;
+    }
+}

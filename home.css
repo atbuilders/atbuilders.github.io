@@ -1,0 +1,251 @@
+/*
+------------------------------------------------------------------------
+------------------ Home / index.html Page CSS  --------------------
+------------------------------------------------------------------------
+*/
+/*
+-----------------------------------------------------------------------
+---------------------- About Section CSS --------------------------
+-----------------------------------------------------------------------
+*/
+#about{
+    width: 100%;
+}
+#about .about-text{
+    width: 100%;
+    background: #e2e2e2;
+    padding:7.85rem 5rem;
+    text-align: center;
+    margin-top: -11rem;
+}
+#about .about-text h2{
+    position: relative;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    text-transform: capitalize;
+}
+#about .about-text h2::after{
+    content: "";
+    width: 12.4rem;
+    height: .8rem;
+    top: 100%;
+    display: block;
+    margin:1rem auto;
+    background: #004a7f;
+}
+#about .about-text p{
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #3a3a3a;
+    line-height: 3.2rem;
+    margin:3rem 0 ;
+}
+#about .about-photo{
+    width: 100%;
+}
+#about .about-photo img{
+    width: 48rem;
+    margin-top: -49rem;
+    margin-left: 5rem;
+}
+/*
+-----------------------------------------------------------------------
+---------------------- Problem Section CSS -------------------------
+-----------------------------------------------------------------------
+*/
+#problem-section {
+    position: relative;
+    width: 100%;
+    background: #004a7f;
+    padding: 10rem 15rem;
+    margin-top: -8px;
+    z-index: 999;
+}
+.problem-content h2{
+    position: relative;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+}
+.problem-content h2::after{
+    content: "";
+    width: 12.4rem;
+    height: .8rem;
+    top: 100%;
+    display: block;
+    margin:2rem auto;
+    background: #ffffff;
+}
+.problem-content p{
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #ffffff;
+    line-height: 3.2rem;
+    margin:2rem 0 ;
+    text-align: center;
+}
+/*
+-----------------------------------------------------------------------
+---------------------- Solution Section CSS -------------------------
+-----------------------------------------------------------------------
+*/
+#solution-section{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background: #e2e2e2;
+    padding: 9rem 8rem;
+}
+.solution-content h2{
+    position: relative;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    text-align: center;
+    text-transform: capitalize;
+}
+.solution-content h2::after{
+    content: "";
+    width: 12.4rem;
+    height: .8rem;
+    top: 100%;
+    display: block;
+    margin:2rem auto;
+    background: #004a7f;
+}
+.solution-content p{
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #3a3a3a;
+    line-height: 3.2rem;
+    margin:2.5rem 0 ;
+    padding: 0 2rem;
+    text-align: center;
+}
+/*
+-----------------------------------------------------------------------
+---------------- Responsive CSS For Home Page  ------------------
+-----------------------------------------------------------------------
+*/
+/*Extra Large device*/
+@media all and (min-width:1400px){
+    #about .about-text{
+        padding:9.85rem 5rem;
+    }
+}
+@media all and (max-width:1200px){
+    /*about*/
+    #about .about-photo img {
+        margin-top: -40rem;
+        margin-left: 3.5rem;
+    }
+}
+/*Large device*/
+@media all and (max-width:992px){
+    /*About*/
+    #about .about-photo img {
+        margin-top: 2rem;
+        margin-left:0;
+    }
+}
+/*medium device*/
+@media all and (max-width:768px){
+    /*Header*/
+    #header-section {
+        height: 60rem;
+    }
+    #header-section .banner {
+        margin-top: 15rem;
+    }
+    #header-section .banner h1 {
+        font-size: 5.2rem;
+    }
+    /*about*/
+    #about .about-text {
+        position: relative;
+        z-index: 2;
+    }
+    #about .about-text h2 {
+        font-size: 4rem;
+    }
+    /*problem section*/
+    #problem-section,
+    #solution-section {
+        padding: 7rem 0rem;
+    }
+    .problem-content h2,
+    .solution-content h2 {
+        font-size: 4rem;
+    }
+
+}
+
+/*small device*/
+@media all and (max-width:576px){
+    /*Header*/
+    #header-section .banner h1 {
+        width: 100%;
+        padding-right:2rem;
+        text-align: center;
+        font-size: 4.2rem;
+    }
+    #header-section .banner h1::after {
+        position: initial;
+        display: block;
+        margin: 2rem auto 0;
+    }
+    #header-section .banner p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    /*about*/
+    #about .about-text {
+        padding: 3rem 1rem;
+    }
+    #about .about-text h2 {
+        font-size: 3rem;
+    }
+    #header-section .banner {
+        margin-top: 10rem;
+    }
+    #about .about-text {
+        margin-top: -12rem;
+    }
+    #header-section .banner h1 {
+        font-size: 3.5rem;
+    }
+    #header-section .banner p {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+      /*problem section*/
+      #problem-section,
+      #solution-section {
+        padding: 5rem 0rem;
+    }
+    .problem-content h2,
+    .solution-content h2 {
+        font-size: 3.5rem;
+    }
+}
+
+/*Extra small device*/
+@media all and (max-width:400px){
+    /*about*/
+    #header-section .banner {
+        margin-top: 8rem;
+    }
+       /*problem section*/
+       #problem-section,
+       #solution-section {
+        padding: 4rem 0rem;
+    }
+    .problem-content h2,
+    .solution-content h2 {
+        font-size: 2.5rem;
+    }
+}
